@@ -32,4 +32,11 @@ template: './index.html',
 filename: 'index.html',
 }),
 ],
+devServer:{
+    static:{
+        directory:path.join(__dirname,'dist'),
+    },
+    port:8080,
+    open: true,
+},
 };
