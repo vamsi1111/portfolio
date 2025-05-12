@@ -7,12 +7,6 @@ output: {
 path: path.resolve(__dirname, 'dist'),
 filename: 'bundle.js',
 },
-plugins: [
-new HtmlWebpackPlugin({
-template: './public/index.html',
-filename: 'index.html', // This will ensure it is placed in the root
-}),
-],
 module: {
 rules: [
 {
@@ -32,4 +26,10 @@ loader: 'babel-loader',
 },
 ],
 },
+plugins: [
+new HtmlWebpackPlugin({
+template: './public/index.html',
+filename: 'index.html',
+}),
+],
 };
